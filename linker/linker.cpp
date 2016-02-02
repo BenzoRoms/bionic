@@ -77,11 +77,11 @@ static soinfo* somain; // main process, always the one after libdl_info
 
 static const char* const kDefaultLdPaths[] = {
 #if defined(__LP64__)
-  "/vendor/lib64",
   "/system/lib64",
+  "/vendor/lib64",
 #else
-  "/vendor/lib",
   "/system/lib",
+  "/vendor/lib",
 #endif
   nullptr
 };
